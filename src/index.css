@@ -1,0 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.services {
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.5); /* Rosa con opacidad */
+}
