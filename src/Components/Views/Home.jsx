@@ -164,7 +164,7 @@ const Home = () => {
             >
               <div className="md:text-4xl lg:text-5xl font-bold text-gray-500 w-full md:w-1/2">
                 <div className="flex justify-start">
-                  Hola, <span className="pl-2">Soy </span>{" "}
+                  Hola, <span className="pl-2">soy </span>{" "}
                   <span className="text-pink-500 pl-2">Rebeca</span>
                 </div>
 
@@ -509,7 +509,7 @@ const Home = () => {
             <h3 className="text-xl font-semibold mb-2">
               Universidad Siglo XXI
             </h3>
-            <p className="text-md text-gray-700">Licenciatura en infromática</p>
+            <p className="text-md text-gray-700">Licenciatura en informática</p>
             <p className="text-md text-gray-700">2022-2026</p>
           </motion.div>
 
@@ -861,7 +861,7 @@ const Home = () => {
       >
         <div className="d-flex justify-content-center align-items-center">
           <div className="col-2 col-md-4 text-gray-500">
-            ¡ Contame tu idea !
+            ¡Contame tu idea!
           </div>
           <div className="col-2 col-md-4 pb-4">
             {" "}
