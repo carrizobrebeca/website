@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.2632fbdb.css",
-    "main.js": "/website/static/js/main.35061c7f.js",
+    "main.css": "/website/static/css/main.cf2684e1.css",
+    "main.js": "/website/static/js/main.003cded8.js",
     "static/js/453.419a5d54.chunk.js": "/website/static/js/453.419a5d54.chunk.js",
     "static/media/profile.png": "/website/static/media/profile.7b4f891fb95bd1eb1066.png",
     "static/media/laptop.png": "/website/static/media/laptop.d8092b4835bad564b818.png",
     "static/media/laptop2.png": "/website/static/media/laptop2.c19e0910b9b4d778c5b7.png",
+    "static/media/git.png": "/website/static/media/git.52ffcca1c2260d3a141b.png",
+    "static/media/Figma.png": "/website/static/media/Figma.457d844232d6cfe0f32b.png",
     "static/media/RebecaCarrizoBourlot.docx.pdf": "/website/static/media/RebecaCarrizoBourlot.docx.c68357329e89aa1b5bc0.pdf",
     "static/media/Logo.png": "/website/static/media/Logo.89b77c5389762dacc261.png",
+    "static/media/postgreSQL.png": "/website/static/media/postgreSQL.1ed228bcc47afeefb2db.png",
+    "static/media/React.svg.png": "/website/static/media/React.svg.da2e1e61ebcf48a0af54.png",
     "index.html": "/website/index.html",
-    "main.2632fbdb.css.map": "/website/static/css/main.2632fbdb.css.map",
-    "main.35061c7f.js.map": "/website/static/js/main.35061c7f.js.map",
+    "main.cf2684e1.css.map": "/website/static/css/main.cf2684e1.css.map",
+    "main.003cded8.js.map": "/website/static/js/main.003cded8.js.map",
     "453.419a5d54.chunk.js.map": "/website/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2632fbdb.css",
-    "static/js/main.35061c7f.js"
+    "static/css/main.cf2684e1.css",
+    "static/js/main.003cded8.js"
   ]
 }
