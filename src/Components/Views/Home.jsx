@@ -5,9 +5,36 @@ import { useNavigate } from "react-router-dom";
 import photo from "../../assets/profile.png";
 import laptop from "../../assets/laptop.png";
 import laptop2 from "../../assets/laptop2.png";
+import figma from "../../assets/Figma.png";
+import sequelize from "../../assets/sequelize.png";
+import tailwind from "../../assets/tailwind.png";
+import html from "../../assets/html.png";
+import css from "../../assets/css.png";
+import git from "../../assets/git.png";
+import postgresql from "../../assets/postgreSQL.png";
+import javascript from "../../assets/javascript.png";
+import express from "../../assets/express.png";
+import node from "../../assets/node.png";
+import react from "../../assets/React.svg.png";
+import redux from "../../assets/redux.png";
 import cv from "../../assets/RebecaCarrizoBourlot.docx.pdf";
-import Carrusel from "../Pages/Carrusel";
+import Corousel from "../Pages/Corousel";
+
 const Home = () => {
+  const images = [
+    figma,
+    sequelize,
+    react,
+    redux,
+    javascript,
+    express,
+    node,
+    postgresql,
+    tailwind,
+    html,
+    css,
+    git
+  ];
   const navigate = useNavigate();
   const [reviews, setreviews] = useState([]);
   const [showMoreInfo, setShowMoreInfo] = useState(false);
@@ -77,22 +104,19 @@ const Home = () => {
         }}
       >
         <div className="inline-block pr-6 mr-6">
-         
-         
-            <button onClick={handleEmail}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="50"
-                height="50"
-                viewBox="0 0 50 50"
-                className="flex justify-center pb-6 mb-6"
-              >
-                <path d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"></path>
-              </svg>
-            </button>
-        
+          <button onClick={handleEmail}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              className="flex justify-center pb-6 mb-6"
+            >
+              <path d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"></path>
+            </svg>
+          </button>
 
           <a
             href="https://github.com/carrizobrebeca"
@@ -111,7 +135,7 @@ const Home = () => {
               </svg>
             </button>
           </a>
-         
+
           <a
             href="https://www.linkedin.com/in/rebeca-carrizo-bourlot-508316274"
             className="flex justify-center pb-6 mb-6 text-black"
@@ -176,7 +200,9 @@ const Home = () => {
                   <p className="flex justify-center text-pink-400 text-base mt-2">
                     Contacto
                   </p>
-                  <p className="flex justify-center text-gray-400 text-base mt-2">carrizob.rebeca@gmail.com</p>
+                  <p className="flex justify-center text-gray-400 text-base mt-2">
+                    carrizob.rebeca@gmail.com
+                  </p>
                   {/* <a href="/login" className="flex justify-center pb-4 pt-2">
                     <button className="bg-transparent border-2 border-pink-200 text-pink-200 py-2 px-6 rounded-full text-lg font-bold hover:bg-pink-200 hover:text-white transition duration-300 ease-in-out">
                       <svg
@@ -288,22 +314,47 @@ const Home = () => {
           </motion.li>
         </ul>
       </motion.section>
-      <div>
-        <h2 className="text-center text-gray-500 text-2xl md:text-3xl lg:text-4xl font-bold p-6">
-          Habilidades
-        </h2>
-      </div>
       <div></div>
-
+      <div></div>
       <motion.section
-        className="habilidades-section bg-white text-center py-16"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={scrollAnimation}
-      >
-        <Carrusel />
-      </motion.section>
+  className="habilidades-section bg-white mt-0 mb-0"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={scrollAnimation}
+>
+  <Corousel/>
+  {/* <div
+    x-data="{}"
+    x-init="$nextTick(() => {
+      let ul = $refs.logos;
+      ul.insertAdjacentHTML('afterend', ul.outerHTML);
+      ul.nextSibling.setAttribute('aria-hidden', 'true');
+    })"
+    className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+  >
+    <ul
+      x-ref="logos"
+      className="flex items-center animate-infinite-scroll"
+    >
+    
+      {images.map((img, index) => (
+        <li key={index} className="flex-shrink-0 mx-8">
+          <img className="w-40" src={img} alt={`Logo de ${img.split('/').pop().split('.')[0]}`} />
+        </li>
+      ))}
+  
+      {images.map((img, index) => (
+        <li key={index + images.length} className="flex-shrink-0 mx-8">
+          <img className="w-40" src={img} alt={`Logo de ${img.split('/').pop().split('.')[0]}`} />
+        </li>
+      ))}
+    </ul>
+  </div> */}
+</motion.section>
+
+
+
       <div></div>
 
       <motion.section
@@ -860,12 +911,9 @@ const Home = () => {
         custom={3.6}
       >
         <div className="d-flex justify-content-center align-items-center">
-          <div className="col-2 col-md-4 text-gray-500">
-            ¡Contame tu idea!
-          </div>
+          <div className="col-2 col-md-4 text-gray-500">¡Contame tu idea!</div>
           <div className="col-2 col-md-4 pb-4">
             {" "}
-
             <p>carrizob.rebeca@gmail.com</p>
             {/* <a href="/login">
               <button className="bg-transparent border-2 border-pink-200 text-pink-200 py-2 px-6 rounded-full text-lg font-bold hover:bg-pink-200 hover:text-white transition duration-300 ease-in-out">
